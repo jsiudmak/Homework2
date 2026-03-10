@@ -19,10 +19,25 @@ Description: This is a medical form for a ficional doctors office that will take
 <body>
 
     <header>
-        <img src="logo-header.svg" alt="sable bioclinic">
 
-        
+        <table width="100%">
+            <tr>
+                <td valign="top" align="left" width="20%">
+                <div class="image">
+                <img src="logo-header.svg" alt="sable bioclinic">
+                </div>
+                </td>
+                <td>
+                    <h2>Sable Bioclinic</h2>
+                </td>
+                <td valign="bottom" align="right" width="20%">
+                <p>Today's Date: <span id="today"></span></p>
+                </td>
+                </tr>
+        </table>
     </header>
+<hr>
+
 
   <h1>New Patient Registration</h1>
     <p id="datetime" align="left"></p>
@@ -30,7 +45,9 @@ Description: This is a medical form for a ficional doctors office that will take
   <p>Fields marked with * are required</p>
 
   <form>
-
+    <center>
+        <div class="format">
+            <table>
     
     <h2>Account Setup</h2>
     <fieldset>
