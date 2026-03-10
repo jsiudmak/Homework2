@@ -70,7 +70,10 @@ Description: This is a medical form for a ficional doctors office that will take
     
     <h2>Demographics and Contact</h2>
     <fieldset>
-
+<tr>
+    <td>
+        <label for="fname">First Name:</label></td>
+    <td>
       <input
         type="text"
         name="fname"
@@ -83,6 +86,7 @@ Description: This is a medical form for a ficional doctors office that will take
         onblur="validateFname()"
         placeholder="<!-- You can add your first name as an example here-->"/>
         <span class="error" id="fname-error"></span>
+</tr>
 
       <label for="mname">Middle Initial</label>
       <input type="text" id="mname" name="mname">
