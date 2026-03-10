@@ -84,9 +84,27 @@ Description: This is a medical form for a ficional doctors office that will take
         title="Letter, apostrophes, and dashes only"
         pattern="[a-zA-Z']{1,30}"
         onblur="validateFname()"
-        placeholder="<!-- You can add your first name as an example here-->"/>
+        placeholder="First Name"/>
         <span class="error" id="fname-error"></span>
 </tr>
+        <tr>
+    <td>
+        <label for="fname">Middle Inital:</label></td>
+    <td>
+      <input
+        type="text"
+        name="mname"
+        id="mname"
+        minlength="1"
+        maxlength="1"
+        title="Letter, apostrophes, and dashes only"
+        pattern="[a-zA-Z']{1,30}"
+        onblur="validateFname()"
+        placeholder="Middle Intial"/>
+        <span class="error" id="mname-error"></span>
+</tr>
+       
+        
 
       <label for="mname">Middle Initial</label>
       <input type="text" id="mname" name="mname">
