@@ -112,8 +112,15 @@ Description: This is a medical form for a ficional doctors office that will take
       <label for="lname">* Last Name</label>
       <input type="text" id="lname" name="lname" placeholder="Doe">
 
-      <label for="dob">* Date of Birth</label>
-      <input type="date" id="dob" name="dob">
+      <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td>
+                <input
+                    type="date" 
+                    id="dob" 
+                    name="dob">
+            </td>
+        </tr>
 
       <label for="ssn">* Social Security Number</label>
       <input type="text" id="ssn" name="ssn">
@@ -188,13 +195,14 @@ Description: This is a medical form for a ficional doctors office that will take
       <label for="zip">* Zip Code</label>
       <input type="text" id="zip" name="zip">
 
-      <label>* Sex</label>
-      <div class="radio-group">
-        <input type="radio" id="male" name="sex" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="sex" value="female">
-        <label for="female">Female</label>
-      </div>
+      <tr>
+            <td><label for="pgender">Gender:</label></td>
+            <td>
+                <input type="radio" id="g1" name="pgender" value="Male"> Male
+                <input type="radio" id="g2" name="pgender" value="Female"> Female
+                <input type="radio" id="g3" name="pgender" value="Other"> Other
+            </td>
+        </tr>
 
     </fieldset>
 
