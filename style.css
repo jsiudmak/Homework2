@@ -36,6 +36,10 @@ fieldset {
     font-family: "Rubik", sans-serif;
     font-weight: normal;
 }
+th {
+    text-align: center;
+    font-family: "Rubik";
+}
 
 legend {
   font-weight: bold;
