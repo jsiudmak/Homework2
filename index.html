@@ -3,7 +3,7 @@
   Program name: Medical Form
 Author: Julian C Siudmak
 Date Created: 2/20/2026
-Date Last edited: 2/27/2026
+Date Last edited: 3/11/2026
 Version: 1.0
 Description: This is a medical form for a ficional doctors office that will take patients personal and medical information.
 -->
@@ -102,11 +102,7 @@ Description: This is a medical form for a ficional doctors office that will take
                         <input type="password" id="confirm_password" required onkeyup="checkPasswordMatch();">
                     </td>
                 </tr>
-    
-   
-    
-    <h2>Demographics and Contact</h2>
-    <fieldset>
+
 <tr>
     <td>
         <label for="fname">First Name:</label></td>
@@ -139,6 +135,24 @@ Description: This is a medical form for a ficional doctors office that will take
         onblur="validateFname()"
         placeholder="Middle Intial"/>
         <span class="error" id="mname-error"></span>
+</tr>
+
+        <tr>
+    <td>
+        <label for="lname">Last Name:</label></td>
+    <td>
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        minlength="1"
+        maxlength="30"
+        required
+        title="Letter, apostrophes, and dashes only"
+        pattern="[a-zA-Z']{1,30}"
+        onblur="validateLname()"
+        placeholder="Last Name"/>
+        <span class="error" id="lname-error"></span>
 </tr>
        
         
