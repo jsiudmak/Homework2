@@ -49,13 +49,25 @@ Description: This is a medical form for a ficional doctors office that will take
         <div class="format">
             <table>
 <tr>
-    <th colspan="4">Create Account</th>
+    <th colspan="4">Account Setup</th>
 </tr>
                 
-    <h2>Account Setup</h2>
-    <fieldset>
-      <label for="userID">* Desired User ID</label>
-      <input type="text" id="userID" name="userID">
+   
+    
+      <tr>
+    <td class="td1"><label for="uid">User ID:</label></td>
+                    <td>
+                        <input
+                        type="text"
+                        name="uid"
+                        id="uid"
+                        maxlength="20"
+                        required
+                        title="Please enter a user ID:"
+                        placeholder="Your user ID"
+                        />
+                    </td>
+                </tr>
 
       <label for="email">* Email Address</label>
       <input type="text" id="email" name="email">
@@ -65,8 +77,7 @@ Description: This is a medical form for a ficional doctors office that will take
 
       <label for="confirm_password">* Re-enter Password</label>
       <input type="password" id="confirm_password" required onkeyup="checkPasswordMatch();">
-    </fieldset>
-
+   
     
     <h2>Demographics and Contact</h2>
     <fieldset>
