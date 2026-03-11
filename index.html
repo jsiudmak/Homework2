@@ -104,38 +104,42 @@ Description: This is a medical form for a ficional doctors office that will take
                 </tr>
 
 <tr>
-    <td>
-        <label for="fname">First Name:</label></td>
-    <td>
-      <input
-        type="text"
-        name="fname"
-        id="fname"
-        minlength="1"
-        maxlength="30"
-        required
-        title="Letter, apostrophes, and dashes only"
-        pattern="[a-zA-Z']{1,30}"
-        onblur="validateFname()"
-        placeholder="First Name"/>
-        <span class="error" id="fname-error"></span>
+    <th colspan="4">Demographics and Contact</th>
 </tr>
+
         <tr>
-    <td>
-        <label for="fname">Middle Inital:</label></td>
-    <td>
-      <input
-        type="text"
-        name="mname"
-        id="mname"
-        minlength="1"
-        maxlength="1"
-        title="Letter, apostrophes, and dashes only"
-        pattern="[a-zA-Z']{1,30}"
-        onblur="validateFname()"
-        placeholder="Middle Intial"/>
-        <span class="error" id="mname-error"></span>
-</tr>
+            <td>
+                <label for="fname">First Name:</label></td>
+            <td>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    minlength="1"
+                    maxlength="30"
+                    required
+                    title="Letter, apostrophes, and dashes only"
+                    pattern="[a-zA-Z']{1,30}"
+                    onblur="validateFname()"
+                    placeholder="First Name"/>
+                    <span class="error" id="fname-error"></span>
+            </tr>
+        <tr>
+            <td>
+                <label for="fname">Middle Inital:</label></td>
+            <td>
+              <input
+                type="text"
+                name="mname"
+                id="mname"
+                minlength="1"
+                maxlength="1"
+                title="Letter, apostrophes, and dashes only"
+                pattern="[a-zA-Z']{1,30}"
+                onblur="validateFname()"
+                placeholder="Middle Intial"/>
+                <span class="error" id="mname-error"></span>
+        </tr>
 
         <tr>
     <td>
@@ -155,16 +159,10 @@ Description: This is a medical form for a ficional doctors office that will take
         <span class="error" id="lname-error"></span>
 </tr>
        
-        
 
-      <label for="mname">Middle Initial</label>
-      <input type="text" id="mname" name="mname">
-
-      <label for="lname">* Last Name</label>
-      <input type="text" id="lname" name="lname" placeholder="Doe">
-
-      <tr>
-            <td><label for="dob">Date of Birth:</label></td>
+        <tr>
+            <td>
+                <label for="dob">Date of Birth:</label></td>
             <td>
                 <input
                     type="date" 
