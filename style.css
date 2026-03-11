@@ -55,6 +55,11 @@ label {
     font-family: "Rubik", sans-serif;
     font-weight: normal;
 }
+input {
+    text-align: left;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
 
 select {
   display: block;
