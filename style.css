@@ -38,6 +38,8 @@ fieldset {
 }
 th {
     text-align: center;
+    color: #FFFFFF;
+    background-color: #37773B;
     font-family: "Rubik";
 }
 
