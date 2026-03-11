@@ -49,12 +49,10 @@ legend {
 }
 
 label {
-  display: block;
-  margin-top: 10px;
-  font-weight: 600;
-  font-family: 'Rubik', sans-serif;
+    text-align: right;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
 }
-
 
 select {
   display: block;
