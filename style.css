@@ -62,14 +62,9 @@ input {
 }
 
 select {
-  display: block;
-  width: 100%;
-  padding: 6px 8px;
-  margin-top: 4px;
-  box-sizing: border-box;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  font-family: 'Rubik', sans-serif;
+     text-align: left;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
 }
 
 .radio-group {
