@@ -3,7 +3,7 @@
   Program name: Medical Form
 Author: Julian C Siudmak
 Date Created: 2/20/2026
-Date Last edited: 3/11/2026
+Date Last edited: 3/23/2026
 Version: 1.0
 Description: This is a medical form for a ficional doctors office that will take patients personal and medical information.
 -->
@@ -64,8 +64,7 @@ Description: This is a medical form for a ficional doctors office that will take
                         maxlength="20"
                         required
                         title="Please enter a user ID:"
-                        placeholder="Desired User ID"
-                        />
+                        placeholder="Desired User ID">
                     </td>
             
                 
@@ -223,7 +222,7 @@ Description: This is a medical form for a ficional doctors office that will take
 		</tr>
 
 				<tr>
-     				<td class="td1"><label for="state">State:</label> </td>
+     				<td><label for="state">State:</label> </td>
      				<td>
 	    			 <select>
 			           <option selected disabled>Select State</option>
@@ -279,6 +278,34 @@ Description: This is a medical form for a ficional doctors office that will take
 			           <option value="WY">Wyoming</option>	
         </select>
        </td>
+
+					<td>
+						<label for="city">City:</label>
+					</td>
+   					<td>
+        				<input type="text" 
+			        			name="city" 
+			        			id="city" 
+			        			maxlength="30">
+					</td>
+					<td>
+						<label for="zip">Zip code:</label>
+					</td>
+   					<td>
+        				<input
+						    type="text"
+						    name="zcode"
+						    id="zcode"
+						    minlength="5"
+						    maxlength="10"
+						    required
+						    title="Numbers and a dash only"
+						    placeholder="12345"
+						    pattern="^\d{5}(-\d{4})?$"
+						    onblur="validateZcode()"/>
+							<span class="error" id="zcode-error"></span>
+					</td>
+    		
 
 
       <tr>
