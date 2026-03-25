@@ -302,8 +302,8 @@ Description: This is a medical form for a ficional doctors office that will take
    					<td>
         				<input
 						    type="text"
-						    name="zcode"
-						    id="zcode"
+						    name="zip"
+						    id="zip"
 						    minlength="5"
 						    maxlength="10"
 						    required
@@ -326,8 +326,38 @@ Description: This is a medical form for a ficional doctors office that will take
 
 				<th colspan="4">Enhacement intake and health information</th>
 
+
+				<tr>
+					<td class="td1">
+						<label for="history">Have you ever had:</label></td>
+    					<td>
+       						 <input type="checkbox" id="option1" value="Influenza"> Influenza
+							 <input type="checkbox" id="option2" value="Measles "> Measles 
+							 <input type="checkbox" id="option3" value="Chicken Pox"> Chicken Pox
+							 <input type="checkbox" id="option4" value="Tuberculosis"> Tuberculosis
+							 <input type="checkbox" id="option5" value="Strep throat"> Strep throat
+					</td>
+					<tr>
+    					<td><label for="notes">Additional Notes:</label></td>
+    					<td>
+       						 <textarea id="notes" name="notes" rows="4" cols="35" placeholder="Enter any additional medical history or allergies"></textarea>
+   						 </td>
+					</tr>
+				
+				
+				</tr> 
+
+				<tr>
+    				<td colspan="4">
+        				<center>
+            				<input type="submit" name="submit">
+            				<input type="reset" name="reset">
+        				</center>
+    				</td>
+				</tr>
+
     </fieldset>
-  </form>
+			</form>
 
 			</table>
 
