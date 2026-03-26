@@ -55,16 +55,19 @@ Description: This is a medical form for a ficional doctors office that will take
    
     
       <tr>
-    <td class="td1"><label for="uid">User ID:</label></td>
+    <td class="td1"><label for="user">User ID:</label></td>
                     <td>
                         <input
                         type="text"
-                        name="uid"
-                        id="uid"
+                        name="user"
+                        id="user"
                         maxlength="20"
                         required
-                        title="Please enter a user ID:"
-                        placeholder="Desired User ID">
+                        title="Username must contain at least 5 characters. It cannot start with a number"
+                        placeholder="Desired User ID"
+						onblur="validateUsername()"
+							/>
+						<span class="error" id="username=error" > </span>
                     </td>
             
                 
