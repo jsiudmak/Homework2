@@ -11,6 +11,19 @@ td.output {
     color: #FFFFFF;
 }
 
+
+.pword-message {
+    text-align: right;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
 #review {
     margin-top: 5px;
 }
