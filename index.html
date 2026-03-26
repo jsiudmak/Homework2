@@ -85,19 +85,32 @@ Description: This is a medical form for a ficional doctors office that will take
 
                 <tr>
                     <td class="td1">
-                        <label for="password"> Password </label>
+                        <label for="pass"> Password </label>
                     </td>
                     <td>
-                        <input type="password" id="password" required onkeyup="checkPasswordMatch();">
+                        <input 
+							type="password" 
+							id="password"
+							required
+							onkeyup="checkPasswordMatch();">
                     </td>
 
                     
                 
                     <td class="td1">
-                        <label for="password"> Re-enter Password </label>
+                        <label for="pass"> Re-enter Password </label>
                     </td>
                     <td>
-                        <input type="password" id="confirm_password" required onkeyup="checkPasswordMatch();">
+                        <input type="pass" 
+							id="confirm_pass"
+							required 
+							onkeyup="checkPasswordMatch();"
+							onblur="confirmPass()"
+							oninput="confirmPass()"
+							onfocus="confirmPass()"
+														/>
+						<span class="error" id="confirm_pass-error"></span>
+						
                     </td>
                 </tr>
 
@@ -426,7 +439,15 @@ Description: This is a medical form for a ficional doctors office that will take
         				<center>
             				<input type="submit" name="submit">
             				<input type="reset" name="reset">
-        				</center>
+							
+						<div class="pword-message">
+   							<span id="msg1"></span> <br/>
+    						<span id="msg2"></span> <br/>
+    						<span id="msg3"></span> <br/>
+    						<span id="msg4"></span> <br/>
+						</div>
+        					<p id="showInput"></p>
+						</center>
     				</td>
 				</tr>
 
