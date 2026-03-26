@@ -95,7 +95,11 @@ Description: This is a medical form for a ficional doctors office that will take
 							type="password" 
 							id="password"
 							required
-							onkeyup="checkPasswordMatch();">
+							onkeyup="checkPasswordMatch();"
+							onblur="validatePassword()"
+							oninput="validatePassword()"
+							onfocus="validatePassword()"
+							>
                     </td>
 
                     
