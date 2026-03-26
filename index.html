@@ -43,7 +43,7 @@ Description: This is a medical form for a ficional doctors office that will take
     
   <p>Fields marked with * are required</p>
 
-  <form action=thankyou.html>
+  <form id="signup" action=thankyou.html>
     <center>
         <div class="format">
 <div>
@@ -67,7 +67,7 @@ Description: This is a medical form for a ficional doctors office that will take
                         placeholder="Desired User ID"
 						onblur="validateUsername()"
 							/>
-						<span class="error" id="username=error" > </span>
+						<span class="error" id="username-error" > </span>
                     </td>
             
                 
@@ -104,21 +104,24 @@ Description: This is a medical form for a ficional doctors office that will take
 
                     
                 
-                    <td class="td1">
-                        <label for="pass"> Re-enter Password </label>
-                    </td>
-                    <td>
-                        <input type="pass" 
-							id="confirm_pass"
-							required 
-							onkeyup="checkPasswordMatch();"
-							onblur="confirmPass()"
-							oninput="confirmPass()"
-							onfocus="confirmPass()"
-														/>
-						<span class="error" id="confirm_pass-error"></span>
-						
-                    </td>
+                    <td class="td1"><label for="password">Password:*</label></td>
+           				 <td>
+              					<input type="password" id="password" required
+               							 onkeyup="checkPasswordMatch();" 
+										onblur="validatePassword()"
+               							 oninput="validatePassword()" />
+           				 </td>
+           							 <td class="td1"><label for="confirm_pass">Re-enter Password:*</label></td>
+            				<td>
+             						 <input type="password" id="confirm_pass" 
+										 	required
+               								onkeyup="checkPasswordMatch();" 
+										 	onblur="confirmPass()"
+                							oninput="confirmPass()" 
+										 />
+              				<br>
+								<span class="error" id="confirm_pass-error"></span>
+            </td>
                 </tr>
 
 <tr>
@@ -226,7 +229,7 @@ Description: This is a medical form for a ficional doctors office that will take
 		                required 
 		                title="Please enter phone number" 
 		                placeholder="123-456-7890"
-						onblur=validatePhone()"
+						onblur="validatePhone()"
 					
 					
 					/>
