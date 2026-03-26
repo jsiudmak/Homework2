@@ -79,6 +79,7 @@ Description: This is a medical form for a ficional doctors office that will take
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,20}$"
         onblur="validateEmail()"
         placeholder="Email Address"/>
+		<br>
         <span class="error" id="email-error"></span>
 </tr>
 
@@ -119,6 +120,7 @@ Description: This is a medical form for a ficional doctors office that will take
                     pattern="[a-zA-Z']{1,30}"
                     onblur="validateFname()"
                     placeholder="First Name"/>
+					<br>
                     <span class="error" id="fname-error"></span>
             
         
@@ -133,8 +135,9 @@ Description: This is a medical form for a ficional doctors office that will take
                 maxlength="1"
                 title="Letter, apostrophes, and dashes only"
                 pattern="[a-zA-Z']{1,30}"
-                onblur="validateFname()"
+                onblur="validateMname()"
                 placeholder="Middle Intial"/>
+				<br>
                 <span class="error" id="mname-error"></span>
         </tr>
 
@@ -153,6 +156,7 @@ Description: This is a medical form for a ficional doctors office that will take
         pattern="[a-zA-Z']{1,30}"
         onblur="validateLname()"
         placeholder="Last Name"/>
+		<br>
         <span class="error" id="lname-error"></span>
 
        
@@ -163,7 +167,14 @@ Description: This is a medical form for a ficional doctors office that will take
                 <input
                     type="date" 
                     id="dob" 
-                    name="dob">
+                    name="dob"
+					onblur="validateDob()"
+					required
+					
+					
+					/>
+				<br>
+				<span class ="error" id="dob-error"> </span>
             </td>
         </tr>
 		<tr>
@@ -189,12 +200,18 @@ Description: This is a medical form for a ficional doctors office that will take
             </td>
             <td>
                 <input type="text" 
-                name="phone" 
-                id="phone" 
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                required 
-                title="Please enter phone number" 
-                placeholder="123-456-7890"/>
+		                name="phone" 
+		                id="phone" 
+		                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+		                required 
+		                title="Please enter phone number" 
+		                placeholder="123-456-7890"
+						onblur=validatePhone()"
+					
+					
+					/>
+				<br>
+				<span class="error" id="phone-error"></span>
             </td>
             </tr>
 
@@ -206,9 +223,15 @@ Description: This is a medical form for a ficional doctors office that will take
         	<input type="text" 
 			        name="address1" 
 			        id="address1" 
-			        maxlength="30" 
+			        maxlength="30"
+					title="letters, dashes, and apostrophes only"
 			        required 
-			        placeholder="123 Main st">
+			        placeholder="123 Main st"
+					onblur="validateAddress1()"
+					/>
+				<br>
+				<span class="error" id="address1-error"></span>
+						
     		</td>
     		<td class="td1">
 				<label for="address2">Address Line 2:</label>
@@ -231,7 +254,12 @@ Description: This is a medical form for a ficional doctors office that will take
         				<input type="text" 
 			        			name="city" 
 			        			id="city" 
-			        			maxlength="30">
+			        			maxlength="30"
+								required
+								onblur="validateCity()"/>
+						<br>
+						<span class="error" id="city-error"></span>
+								
 					</td>
 
 
@@ -309,9 +337,10 @@ Description: This is a medical form for a ficional doctors office that will take
 						    required
 						    title="Numbers and a dash only"
 						    placeholder="12345"
-						    pattern="^\d{5}(-\d{4})?$"
-						    onblur="validateZcode()"/>
-							<span class="error" id="zcode-error"></span>
+						    pattern="[0-9]{5}"
+						    onblur="validateZip()"/>
+						<br>
+							<span class="error" id="zip-error"></span>
 					</td>
 				
             <td class="td1">
@@ -348,6 +377,20 @@ Description: This is a medical form for a ficional doctors office that will take
 
 
 						
+					</td>
+
+					<td class="td1"> <label for="range"> Current pain level <br> (Rate from 0 to 10, 1 = mild 10 = spicy </label> </td>
+					<td>
+
+
+						<input 
+							type="range"
+							name="range"
+							id="range"
+							min="0"
+							max="10"
+							value="0"/>
+						<span id=range-slider></span>
 					</td>
 
 				</tr>
