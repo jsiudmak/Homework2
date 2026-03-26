@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+table.output,
+tr.output,
+td.output {
+    width: 500px;
+    background-color: #FFFBF2;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+#review {
+    margin-top: 5px;
+}
+
 body { 
   background-color: #FFFBF2; 
   font-family: 'Rubik', sans-serif; 
