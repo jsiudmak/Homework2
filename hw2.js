@@ -66,7 +66,7 @@ function reviewInput() {
             default:
                 if (value !== "") {
                     formoutput += "<tr><td align='right'>" + name + "</td>";
-                    formoutput += "<td class='outputdata'>" + value + "</td></tr>";
+                    formoutput += "<td class='outputdata'><span>" + value + "</span></td></tr>";
                 }
         }
     }
