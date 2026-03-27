@@ -134,7 +134,7 @@ function validatePassword() {
     if (!pass.match(/[!@#$%&*\-_\\.+()]/)) errors.push("At least one special character (!@#$%&*-_.+())");
     if (username && pass.includes(username)) errors.push("Password cannot contain your username");
  
-    // Display up to 4 messages in the msg spans
+    // DISPLAY MSG
     for (let i = 0; i < msgs.length; i++) {
         const el = document.getElementById(msgs[i]);
         if (el) el.innerHTML = errors[i] ? "⚠ " + errors[i] : "";
