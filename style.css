@@ -11,6 +11,12 @@ td.output {
     color: #ffffff;
 }
 
+td.output span {
+    color: #64B769;
+
+    
+}
+
 
 .pword-message {
     text-align: right;
