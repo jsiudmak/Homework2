@@ -87,20 +87,7 @@ Description: This is a medical form for a ficional doctors office that will take
 </tr>
 
                 <tr>
-                    <td class="td1">
-                        <label for="pass"> Password </label>
-                    </td>
-                    <td>
-                        <input 
-							type="password" 
-							id="password"
-							required
-							onkeyup="checkPasswordMatch();"
-							onblur="validatePassword()"
-							oninput="validatePassword()"
-							onfocus="validatePassword()"
-							>
-                    </td>
+                   
 
                     
                 
@@ -121,8 +108,16 @@ Description: This is a medical form for a ficional doctors office that will take
 										 />
               				<br>
 								<span class="error" id="confirm_pass-error"></span>
+								<div class="pword-message">
+   							<span id="msg1"></span> <br/>
+    						<span id="msg2"></span> <br/>
+    						<span id="msg3"></span> <br/>
+    						<span id="msg4"></span> <br/>
+						</div>
+        					<p id="showInput"></p>
             </td>
                 </tr>
+				
 
 <tr>
     <th colspan="4">Demographics and Contact</th>
